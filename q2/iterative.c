@@ -1,6 +1,12 @@
 /* FIXME: Implement! */
 
-int main()
+char smallest_character ( char str[], char c )
 {
-    return 0;
+    int i = 0;
+    while (str[i] != '\t') {
+        if(str[i] > c)
+            return str[i];
+        i++;
+    }
+    return str[0];
 }
